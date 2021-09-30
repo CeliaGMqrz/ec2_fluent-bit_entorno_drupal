@@ -1,4 +1,4 @@
-# Logging Watchlogs Ec2 AWS Fluent-bit
+# Logging CloudWatch Ec2 AWS Fluent-bit
 
 ### Objetivo:
 
@@ -11,9 +11,9 @@ Reflejar logs en Watchlogs para Ec2
 
 ### Requisitos 
 
-- Docker y Docker Compose instalados
 - Una cuenta con Ec2 en AWS
-
+- Docker y Docker Compose instalados en Ec2
+  
 ### Clonar el repositorio 
 
 ```shell 
@@ -39,6 +39,10 @@ Las encuentras en el fichero `.env` en el repositorio
 ### Construir las imágenes 
 
 Ejecuta el pequeño script `bash build_images.sh`
+
+### CloudWatch
+
+
 
 ### Desplegar el entorno 
 
