@@ -142,7 +142,7 @@ fichero `docker-compose.yaml`
         tag: nginx.logs
 ```
 
-`logging` es donde vamos a epecificar el controlador de registro que en este caso es `fluentd` y le indicamso una etiqueta para diferenciarlos del resto.
+`logging` es donde vamos a epecificar el controlador de registro que en este caso es `fluentd` y le indicamos una etiqueta para diferenciarlos del resto.
 
 
 ### Desplegar el entorno 
