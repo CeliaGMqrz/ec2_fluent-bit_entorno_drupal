@@ -130,6 +130,20 @@ Indicamos el numero de workers también.
 
 No vamos a entrar en detalles con los contenedores de drupal, nginx y mysql ya que el objetivo de este posts se enfoca en la obtención y salida de logs.
 
+Pero sí tenemos que añadir el parámetro `logging` a los servicios que queramos monitorizar o más bien obtener logs de ellos.
+
+fichero `docker-compose.yaml`
+```shell
+    logging:
+      driver: fluentd
+      options:
+        fluentd-async-connect: "true"
+        fluentd-address: localhost:24224
+        tag: nginx.logs
+```
+
+`logging` es donde vamos a epecificar el controlador de registro que en este caso es `fluentd` y le indicamso una etiqueta para diferenciarlos del resto.
+
 
 ### Desplegar el entorno 
 
